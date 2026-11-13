@@ -1,0 +1,53 @@
+{
+  "name": "coalguard-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CoalGuard.AI transactional API, PostgreSQL 16 schema and governance workflows.",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "db:start": "tsx scripts/dev-db.ts",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "db:seed": "tsx scripts/seed.ts",
+    "db:reset": "tsx scripts/reset.ts",
+    "seed:export": "tsx scripts/export-frontend-seed.ts",
+    "openapi": "tsx scripts/export-openapi.ts",
+    "jobs:tick": "tsx scripts/jobs-tick.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@fastify/cors": "11.1.0",
+    "@fastify/helmet": "13.0.2",
+    "@fastify/multipart": "^10.1.6",
+    "@fastify/rate-limit": "10.3.0",
+    "@fastify/swagger": "9.5.1",
+    "@fastify/swagger-ui": "5.2.3",
+    "dotenv": "17.2.3",
+    "fastify": "5.6.1",
+    "file-type": "^22.2.0",
+    "mammoth": "^1.13.0",
+    "pdf-parse": "^2.4.5",
+    "pg": "8.16.3",
+    "tesseract.js": "^7.0.0",
+    "xlsx": "^0.18.5",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@embedded-postgres/windows-x64": "^16.14.0-beta.17",
+    "@types/node": "24.10.1",
+    "@types/pg": "8.15.6",
+    "@vitest/coverage-v8": "3.2.4",
+    "embedded-postgres": "16.14.0-beta.17",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}

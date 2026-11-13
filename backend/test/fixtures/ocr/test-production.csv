@@ -1,0 +1,4 @@
+mine_id,mine_name,production_tonnes,open_violations,status
+mine-01,Rajmahal Pit 01,12500,2,operational
+mine-02,Wani Open Cast,8900,1,operational
+mine-03,Singrauli Main,15200,0,partial

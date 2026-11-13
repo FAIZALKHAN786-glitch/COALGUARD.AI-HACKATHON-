@@ -1,0 +1,10 @@
+CoalGuard.AI Mine Safety Inspection Report
+Mine: RMC-JDH-01 (Rajmahal Pit 01)
+Reporting Period: 2026-09-01 to 2026-09-30
+Responsible Officer: Ravinder Singh
+
+Production: 12500 tonnes
+Open Violations: 2
+Corrective Actions: 3
+
+This is a test document for OCR extraction verification.

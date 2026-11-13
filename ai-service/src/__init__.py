@@ -1,0 +1,1 @@
+# CoalGuard.AI AI Intelligence Subsystem
